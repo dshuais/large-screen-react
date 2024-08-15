@@ -168,24 +168,22 @@ export default [
       // 禁止使用保留字作为变量名
       'no-shadow-restricted-names': 'error',
       // 禁止使用未定义的变量
-      'no-undef': 'off',
-      // [
-      //   'error',
-      //   {
-      //     typeof: false
-      //   }
-      // ],
+      'no-undef': [
+        'error',
+        {
+          typeof: false
+        }
+      ],
       // 定义过的变量必须使用  因为使用了ts所以关闭eslint默认检查 使用@typescript-eslint/no-unused-vars去控制
-      'no-unused-vars': 'off',
-      // [
-      //   'error',
-      //   {
-      //     vars: 'all',
-      //     args: 'none',
-      //     caughtErrors: 'none',
-      //     ignoreRestSiblings: true
-      //   }
-      // ],
+      'no-unused-vars': [
+        'error',
+        {
+          vars: 'all',
+          args: 'none',
+          caughtErrors: 'none',
+          ignoreRestSiblings: true
+        }
+      ],
 
       //
       //
